@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>xlollx</title>
+<meta name="description" content="Open source Android apps by xlollx.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #faf9fb;
+    --surface: #ffffff;
+    --border: #e4e1e8;
+    --ink: #1b1b1f;
+    --ink-soft: #5a5862;
+    --accent: #5b45c8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121016;
+      --surface: #1c1a21;
+      --border: #2e2b35;
+      --ink: #e8e5ec;
+      --ink-soft: #a9a5b2;
+      --accent: #b3a4ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px 64px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 30px; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .lede { color: var(--ink-soft); margin: 0 0 36px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .card h2 { font-size: 19px; margin: 0 0 6px; }
+  .card p { margin: 0 0 14px; color: var(--ink-soft); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { color: var(--ink-soft); font-size: 14px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>xlollx</h1>
+  <p class="lede">Open source Android apps. No accounts, no servers: everything runs on the phone.</p>
+
+  <section class="card">
+    <h2>Songport</h2>
+    <p>Keeps playlists in sync across music services, manually or on a schedule. Free and GPL-3.0.</p>
+    <div class="links">
+      <a href="https://github.com/xlollx/Songport">Source code</a>
+      <a href="https://github.com/xlollx/Songport/releases/latest">Download</a>
+      <a href="https://xlollx.github.io/Songport/privacy-policy">Privacy policy</a>
+      <a href="https://github.com/xlollx/Songport/issues/new/choose">Report a problem</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Songport Bridge</h2>
+    <p>Optional companion app that adds the services without an open API, through the same web
+      interfaces their own players use.</p>
+    <div class="links">
+      <a href="https://github.com/xlollx/Songport-YTM-Bridge">Source code</a>
+      <a href="https://github.com/xlollx/Songport-YTM-Bridge/releases/latest">Download</a>
+    </div>
+  </section>
+
+  <footer>
+    Not affiliated with Spotify, Apple, Google/YouTube, Amazon, TIDAL or Deezer. Service names are
+    trademarks of their respective owners, used only to indicate compatibility.
+  </footer>
+</main>
+</body>
+</html>
