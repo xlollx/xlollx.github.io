@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trackhop – back to the app</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:system-ui,sans-serif;margin:2rem;color:#222}a{color:#5B3FD9}</style>
+</head>
+<body>
+<h1>Trackhop</h1>
+<p id="msg">Returning to the app…</p>
+<p><a id="link" href="#">If nothing happens, tap here.</a></p>
+<script>
+  // Deezer only accepts https redirects. This page forwards the parameters (query and fragment,
+  // where Deezer puts the access_token) to the app scheme: songport://callback
+  var target = 'songport://callback' + location.search + location.hash;
+  document.getElementById('link').href = target;
+  location.replace(target);
+</script>
+</body>
+</html>
